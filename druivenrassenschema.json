@@ -2,7 +2,9 @@
   "name": "wijn_fiche_herkomst_druiven",
   "strict": true,
   "schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "wijn_fiche_herkomst_druiven",
+    "description": "Schema voor de druivenrassen die op een wijnfiche voorkomen.",
     "type": "object",
     "additionalProperties": false,
     "properties": {
@@ -360,7 +362,11 @@
         },
         "minItems": 0,
         "uniqueItems": true,
-        "default": []
+        "default": [],
+        "examples": [
+          ["Merlot"],
+          ["Sauvignon_Blanc", "Semillon"]
+        ]
       }
     },
     "required": [
